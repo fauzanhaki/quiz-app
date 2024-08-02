@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { FaUser, FaLock } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 
 const LoginForm = ({ onLogin }) => {
   const [username, setUsername] = useState("");
@@ -32,7 +32,7 @@ const LoginForm = ({ onLogin }) => {
         </h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-6">
-            <label className="block mb-2 text-sm font-semibold text-gray-700 flex items-center">
+            <label className="mb-2 text-sm font-semibold text-gray-700 flex items-center">
               <FaUser className="mr-3 text-gray-400" />
               Username
             </label>
